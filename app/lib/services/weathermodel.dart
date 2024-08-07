@@ -12,4 +12,5 @@ class weathermodel {
       required this.condition,
       required this.mn_temp,
       required this.mx_temp});
+      
 }
