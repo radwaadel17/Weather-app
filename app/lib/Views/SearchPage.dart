@@ -21,8 +21,8 @@ class SearchPage extends StatelessWidget {
             onSubmitted: (Value){
               
             },
-            decoration: InputDecoration(
             
+            decoration: InputDecoration(
               contentPadding:EdgeInsets.symmetric(vertical: 30 , horizontal: 16) ,
               labelText: 'Search',
               border:  OutlineInputBorder(
