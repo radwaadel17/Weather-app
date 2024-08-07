@@ -1,8 +1,11 @@
 import 'package:app/Views/HomePage.dart';
+import 'package:app/services/weatherservices.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const App());
+  //weatherService(Dio()).getHttp();
 }
 
 class App extends StatelessWidget {

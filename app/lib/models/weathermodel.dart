@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class weathermodel {
   final String city;
   final String last_update;
@@ -14,4 +13,15 @@ class weathermodel {
       required this.condition,
       required this.mn_temp,
       required this.mx_temp});
+      factory weathermodel.fromjson(json){
+            return weathermodel(
+              city: json['location"']['name'],
+              last_update: json['current']['last_updated'],
+              avg_temp: json['forecast']['forecastday'][0]['day']['avgtemp_c'],
+              condition: condition,
+              mn_temp: json['forecast']['forecastday'][0]['day']['mintemp_c'],
+              mx_temp: json['forecast']['forecastday'][0]['day']['maxtemp_c'],
+              );
+              
+      }
 }
