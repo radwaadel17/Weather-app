@@ -18,7 +18,7 @@ class weathermodel {
               city: json['location"']['name'],
               last_update: json['current']['last_updated'],
               avg_temp: json['forecast']['forecastday'][0]['day']['avgtemp_c'],
-              condition: condition,
+              condition: json['forecast']['forecastday'][0]['condition']['text'],
               mn_temp: json['forecast']['forecastday'][0]['day']['mintemp_c'],
               mx_temp: json['forecast']['forecastday'][0]['day']['maxtemp_c'],
               );
