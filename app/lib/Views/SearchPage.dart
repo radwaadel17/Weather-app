@@ -18,19 +18,18 @@ class SearchPage extends StatelessWidget {
         padding: EdgeInsets.all(16),
         child: Center(
           child: TextField(
-            onSubmitted: (Value){
-              
+            onSubmitted: (value){
+             
             },
-            
             decoration: InputDecoration(
-              contentPadding:EdgeInsets.symmetric(vertical: 30 , horizontal: 16) ,
+              contentPadding: const EdgeInsets.symmetric(vertical: 30 , horizontal: 16) ,
               labelText: 'Search',
               border:  OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
               hintText: 'Enter city name',
               suffixIcon:IconButton(onPressed: (){
-              }, icon: Icon(Icons.search)) ,
+              }, icon: const Icon(Icons.search)) ,
             ),
           ),
         ),
