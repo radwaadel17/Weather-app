@@ -15,10 +15,10 @@ class weathermodel {
       required this.mx_temp});
       factory weathermodel.fromjson(json){
             return weathermodel(
-              city: json['location"']['name'],
+              city: json['location']['name'],
               last_update: json['current']['last_updated'],
               avg_temp: json['forecast']['forecastday'][0]['day']['avgtemp_c'],
-              condition: json['forecast']['forecastday'][0]['condition']['text'],
+              condition: json['forecast']['forecastday'][0]['day']['condition']['text'],
               mn_temp: json['forecast']['forecastday'][0]['day']['mintemp_c'],
               mx_temp: json['forecast']['forecastday'][0]['day']['maxtemp_c'],
               );
