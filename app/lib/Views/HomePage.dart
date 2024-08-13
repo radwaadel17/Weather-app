@@ -1,12 +1,11 @@
 import 'package:app/Views/SearchPage.dart';
 import 'package:flutter/material.dart';
-
 import '../Componets/NoWeatherBody.dart';
 import '../Componets/WeatherBody.dart';
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
@@ -28,6 +27,7 @@ class HomePage extends StatelessWidget {
                 )),
           ],
         ),
-        body: const WeatherBody());
+        body: w == null ? const NoWeatherBody() : const WeatherBody() ,
+      );
   }
 } 

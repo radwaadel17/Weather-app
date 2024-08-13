@@ -26,8 +26,3 @@ class weathermodel {
       }
 }
 
-//important notes : 
-//Api Key : d9c25a6552f64bb4bcc183308240708
-//web     : https://www.weatherapi.com/api-explorer.aspx#forecast
-//Request : http://api.weatherapi.com/v1/forecast.json?key=d9c25a6552f64bb4bcc183308240708&q=Cairo&days=1&aqi=no&alerts=no
-

@@ -8,7 +8,6 @@ import 'package:dio/dio.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +24,8 @@ class SearchPage extends StatelessWidget {
         child: Center(
           child: TextField(
             onSubmitted: (value) async{
-            weathermodel w = await weatherService(Dio()).GetRequest(cityName: value);
-             log(w.city);
+              w = await weatherService(Dio()).GetRequest(cityName: value);
+             Navigator.pop(context);
             },
             decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 30 , horizontal: 16) ,
@@ -44,3 +43,4 @@ class SearchPage extends StatelessWidget {
     );
   }
 }
+weathermodel? w ;
