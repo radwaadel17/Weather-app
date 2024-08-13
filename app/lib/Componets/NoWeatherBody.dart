@@ -12,7 +12,7 @@ class NoWeatherBody extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,  //The widget will only take up as much space as its children need
         children: [
           Text(
-              'there is no weather 😔 start',
+              'There is no weather 😔 start',
               style: TextStyle(
                 fontSize: 30,
               ),
