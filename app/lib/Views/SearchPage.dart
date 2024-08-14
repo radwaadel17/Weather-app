@@ -24,7 +24,6 @@ class SearchPage extends StatelessWidget {
         child: Center(
           child: TextField(
             onSubmitted: (value) async{
-              w = await weatherService(Dio()).GetRequest(cityName: value);
              Navigator.pop(context);
             },
             decoration: InputDecoration(
@@ -43,4 +42,3 @@ class SearchPage extends StatelessWidget {
     );
   }
 }
-weathermodel? w ;

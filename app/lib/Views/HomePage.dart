@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
                 )),
           ],
         ),
-        body: w == null ? const NoWeatherBody() : const WeatherBody() ,
+        body: const NoWeatherBody() ,
       );
   }
 } 
