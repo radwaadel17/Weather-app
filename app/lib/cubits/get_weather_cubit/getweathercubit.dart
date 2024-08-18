@@ -5,9 +5,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../services/weatherservices.dart';
 class GetWeathercubit extends Cubit<WeatherState> {
   GetWeathercubit() : super(NoweatherState());
-  getWeather({required String value}) async {
+  weathermodel? w ;
+ getWeather({required String Value}) async {
     try{
-       weathermodel w = await weatherService(Dio()).GetRequest(cityName: value);
+        w = await weatherService(Dio()).GetRequest(cityName: Value);
        emit(WeatherLoadedState());
     }catch(e){
      emit(WeatherFaluireState());
